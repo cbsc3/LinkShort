@@ -1,5 +1,4 @@
 import axios from "axios"
-const auth_token = "9ba5f259-82b8-4cae-9ec3-97ab35dbf85d"
 //The following functions in this file are for the use in react components, but they also serve as a testing method for the backend api
 export function retrieve_ownership(auth_token, UUID_url){
     axios.get("http://127.0.0.1:5000/API/retrieve_ownership/" + auth_token + "/" + UUID_url)
